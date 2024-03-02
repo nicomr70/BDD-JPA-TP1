@@ -1,4 +1,4 @@
-package fr.uga.l3miage.tp1.exo1;
+package fr.uga.l3miage.tp1.exo3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,9 +11,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * </ul>
  */
 @SpringBootApplication
-public class Tp1Exo1SpringApplication {
+public class Tp1Exo3SpringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Tp1Exo1SpringApplication.class,args);
+        SpringApplication.run(Tp1Exo3SpringApplication.class,args);
     }
 }
