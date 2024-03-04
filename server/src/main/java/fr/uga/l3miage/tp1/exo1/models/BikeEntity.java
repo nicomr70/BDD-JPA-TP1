@@ -20,7 +20,7 @@ public class BikeEntity {
     private Integer capacity;
 
     @Column(name="cylinder_number")
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
     private CylinderNumber cylinderNumber;
 
     @Column(name="automatic")
@@ -30,10 +30,10 @@ public class BikeEntity {
     private boolean shifter;
 
     @Column(name="shifter_type")
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.ORDINAL)
     private ShifterType shifterType;
 
     @Column(name="ciculation_date")
     private LocalDate circulationDate;
-    
+
 }
