@@ -52,7 +52,7 @@ class TestExo1 {
                 .orElseThrow(()->new Exception("L'attribut shifterType n'a pas l'annotation @Enumerated")))
                 .value())
                 .as("L'attribut shifterType devrait être en mode EnumType.ORDINAL")
-                .isEqualTo(EnumType.ORDINAL);
+                .isEqualTo(EnumType.STRING);
 
         assertThat(((Enumerated)Arrays.stream(Arrays.stream(classz.getDeclaredFields())
                         .filter(field -> field.getName().equals("cylinderNumber"))
@@ -64,7 +64,7 @@ class TestExo1 {
                 .orElseThrow(()->new Exception("L'attribut cylinderNumber n'a pas l'annotation @Enumerated")))
                 .value())
                 .as("L'attribut cylinderNumber devrait être en mode EnumType.STRING")
-                .isEqualTo(EnumType.STRING);
+                .isEqualTo(EnumType.ORDINAL);
 
 
         // vérification des annotations sur la class mère
