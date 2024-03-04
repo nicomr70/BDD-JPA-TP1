@@ -13,20 +13,18 @@ import java.time.LocalDate;
 @Table(name="bike_VTT")
 public class BikeEntity {
     @Id
-    @Column(name="immatriculation", length = 8)
+    @Column(length = 8)
     private String immatriculation;
 
-    @Column(name="capacity")
     private Integer capacity;
 
-    @Column(name="cylinder_number")
+
     @Enumerated(EnumType.STRING)
     private CylinderNumber cylinderNumber;
 
-    @Column(name="automatic")
+
     private boolean automatic;
 
-    @Column(name="shifter")
     private boolean shifter;
 
     @Column(name="shifter_type")
