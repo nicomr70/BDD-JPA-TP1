@@ -16,15 +16,18 @@ public class BikeEntity {
     @Column(length = 8)
     private String immatriculation;
 
+    @Column
     private Integer capacity;
 
 
     @Enumerated(EnumType.STRING)
+    @Column
     private CylinderNumber cylinderNumber;
 
-
+    @Column
     private boolean automatic;
 
+    @Column
     private boolean shifter;
 
     @Column(name="shifter_type")
