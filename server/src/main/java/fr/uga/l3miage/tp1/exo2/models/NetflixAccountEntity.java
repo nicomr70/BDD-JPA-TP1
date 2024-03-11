@@ -19,6 +19,6 @@ public class NetflixAccountEntity {
     private accountType typeAccount;
 
     @OneToOne(mappedBy = "netflixAccountEntity")
-    private NetflixUserEntity user;
+    private NetflixUserEntity user_id;
 
 }
