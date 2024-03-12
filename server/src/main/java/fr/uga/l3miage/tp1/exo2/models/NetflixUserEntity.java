@@ -22,7 +22,7 @@ public class NetflixUserEntity {
 
     @OneToOne()
     @JoinColumn(name = "netflix_account_id")
-    private NetflixAccountEntity netflixAccountEntity;
+    private NetflixAccountEntity netflixAccount;
 
 
 }
