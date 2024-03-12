@@ -1,6 +1,6 @@
 package fr.uga.l3miage.tp1.exo3.enums;
 
-public enum brandType {
+public enum BrandType {
     ALIMENTAIRE,
     HYGIENE,
     AUTRE
