@@ -12,6 +12,6 @@ class Session {
     private String lastCommand;
     private String currentDir;
     private Boolean lock;
-    @OneToOne(mappedBy = "session")
+    @OneToOne
     private User user;
 }
