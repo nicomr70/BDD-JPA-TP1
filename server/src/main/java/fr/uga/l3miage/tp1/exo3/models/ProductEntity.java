@@ -1,7 +1,6 @@
 package fr.uga.l3miage.tp1.exo3.models;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
 @Table(name = "product")
@@ -16,7 +15,7 @@ public class ProductEntity {
     @Column(name = "consumable")
     private boolean consumable ;
 
-    @OneToMany(mappedBy = "productEntity")
-    @Column(name = "brand_miage")
-    private Set<BrandEntity> brands ;
+    @ManyToOne
+    @JoinColumn(name = "company_name")
+    private BrandEntity brand ;
 }

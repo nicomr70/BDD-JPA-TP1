@@ -13,6 +13,6 @@ public class FederationEntity {
     @Column(name = "is_fage_membership")
     private boolean isFageMembership ;
 
-    @ManyToMany
+    @OneToMany(mappedBy = "federation")
     private Set<AssociationEntity> associations ;
 }
