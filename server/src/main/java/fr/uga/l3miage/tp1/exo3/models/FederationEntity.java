@@ -11,7 +11,6 @@ public class FederationEntity {
 
     private boolean isFageMemberShip;
 
-    //Manque asso voir meme ne pas en mettre
     @ManyToOne
     private AssociationEntity association;
 

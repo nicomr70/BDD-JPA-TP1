@@ -18,6 +18,6 @@ public class AssociationEntity {
     private AssociationType associationType;
 
     // Manque association
-    @OneToMany(mappedBy = "association")
+    @ManyToOne()
     private  FederationEntity federation;
 }

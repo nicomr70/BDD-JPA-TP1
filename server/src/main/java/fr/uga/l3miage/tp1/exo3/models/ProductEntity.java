@@ -17,7 +17,7 @@ public class ProductEntity {
     @Column(name = "type")
     private boolean consumable;
 
-    // Manque association
+
     @OneToMany(mappedBy = "product")
     private Set<BrandEntity> brands;
 
