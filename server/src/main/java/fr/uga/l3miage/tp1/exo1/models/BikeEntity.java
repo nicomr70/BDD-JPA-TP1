@@ -6,6 +6,7 @@ import fr.uga.l3miage.tp1.exo1.enums.CylinderNumber;
 import javax.persistence.*;
 import java.time.LocalDate;
 
+@Entity
 public class BikeEntity {
     @Id
     @Column(name="immatriculation")
