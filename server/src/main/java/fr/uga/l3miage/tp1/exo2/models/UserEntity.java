@@ -1,9 +1,6 @@
 package fr.uga.l3miage.tp1.exo2.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.OffsetDateTime;
 
 @Entity
@@ -11,6 +8,7 @@ import java.time.OffsetDateTime;
 public class UserEntity {
     @Id
     private Long idUser ;
+    @Column(updatable = false)
     private boolean SSO ;
     private OffsetDateTime lastConnexion ;
     @OneToOne
