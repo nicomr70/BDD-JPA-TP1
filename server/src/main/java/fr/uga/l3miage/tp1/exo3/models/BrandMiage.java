@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "brand_miage")
-public class BrandMiage {
+public class BrandMiageEntity {
 
     @Id
     @Column(name = "company_name")
