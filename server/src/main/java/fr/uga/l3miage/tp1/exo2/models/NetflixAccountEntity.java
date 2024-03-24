@@ -11,7 +11,7 @@ public class NetflixAccountEntity {
 
     @Id
     @Column(name = "id")
-    private BigInteger id;
+    private Long id;
 
     @Column(name = "nb_devices")
     private Integer nb_devices;
