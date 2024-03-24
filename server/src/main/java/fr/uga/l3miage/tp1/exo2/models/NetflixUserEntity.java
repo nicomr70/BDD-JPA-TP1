@@ -15,7 +15,7 @@ public class NetflixUserEntity {
     private BigInteger id;
 
     @Column(name = "uuid")
-    private String uuid;
+    private UUID uuid;
 
     @Column(name = "lastname")
     private String lastname;
