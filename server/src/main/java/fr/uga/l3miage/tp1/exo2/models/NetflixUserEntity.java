@@ -29,7 +29,8 @@ public class NetflixUserEntity {
     @Column(name = "birthDate")
     private LocalDate birthDate;
 
-    @OneToOne(mappedBy = "netflixUserEntity")
+    @OneToOne
+    @JoinColumn(name = "uuid_user",referencedColumnName = "uuid")
     private NetflixAccountEntity netflixAccount;
 
 }
